@@ -16,6 +16,9 @@ try:
 except ImportError:
     config = dict()
 
+
+VERSION = "1.1.0"
+
 CFG_EARNINGS = "EarningSpeed_earnings"
 
 
