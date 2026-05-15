@@ -141,7 +141,7 @@ class HourlyIncome(object):
         :param msg:
         :return:
         """
-        msg = "{} Visits/hr".format(Locale.stringFromNumber(self.rate(), 2))
+        msg = "{} Visits/hr".format(Locale.string_from_number(self.rate(), 2))
         self.rate_widget.after(0, self.rate_widget.config, {"text": msg})
 
     def update_hourlyincome(self):
@@ -150,7 +150,7 @@ class HourlyIncome(object):
         :param msg:
         :return:
         """
-        msg = "{} Cr/hr".format(Locale.stringFromNumber(self.speed(), 2))
+        msg = "{} Cr/hr".format(Locale.string_from_number(self.speed(), 2))
         self.speed_widget.after(0, self.speed_widget.config, {"text": msg})
 
     def update_earned(self):
@@ -159,7 +159,7 @@ class HourlyIncome(object):
         :param msg:
         :return:
         """
-        msg = "{} Cr".format(Locale.stringFromNumber(self.trip_earnings() + self.saved_earnings, 2))
+        msg = "{} Cr".format(Locale.string_from_number(self.trip_earnings() + self.saved_earnings, 2))
         self.earned_widget.after(0, self.earned_widget.config, {"text": msg})
 
 
